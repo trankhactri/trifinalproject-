@@ -1,0 +1,159 @@
+ 
+ 	
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url(https://i.postimg.cc/8zM0YSGm/9acc857606503d267aff0798a938d53b.jpg);
+  color: #16b1bf;
+  scroll-behavior: smooth;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "about"
+    "education"
+    "art"
+    "contact"
+    "footer";
+  row-gap: 30px;
+  padding: 20px;
+}
+
+/* Sections */
+.card {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  margin: auto;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, background-color 0.3s ease;
+  font-family: fantasy;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background-color: #000000;
+}
+
+.card h2 {
+  color: #0e70d8;
+  margin-bottom: 15px;
+  font-family: fantasy;
+}
+
+/* Header styles */
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, #6978ff, #7874f2);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-family: fantasy;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* Education box */
+.edu-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.edu-boxes div {
+  flex: 1 1 45%;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ffb6c1;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #040404;
+  color: #d6006e;
+}
+
+/* Art gallery */
+.art-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.art-flex div {
+  width: 110px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.art-flex img {
+  width: 100px;
+  border-radius: 12px;
+}
+
+.art-flex div:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 10px;
+  color: #999;
+  font-size: 0.9em;
+}
+
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  input, textarea {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1rem;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #eee;
+  }
+  
